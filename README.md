@@ -5,7 +5,7 @@ A minimal in-browser file explorer for Unix-like systems, written in python.
 
 This program starts a local server which can be visited from the browser to access the files on which the server is running. This program can run on servers, home computer or a RaspberryPi and grants access their files anywhere in the Internet.
 
-It features an in-built text editor and can open any content(PDFs, Videos, Music) as long as the browser can open it. Most modern browsers often come with a video player, music player and a pdf reader, so no external dependencies are required. Files can also be downloaded from the web UI directrly or streamed using your favourite player. .
+It features an in-built text viewer and by default will open any file that can be opened as text. ALso it can open any other content(pdfs, videos, audios) as long as the browser can open it. Most modern browsers often come with a video player, music player and a pdf reader, so no external dependencies are required. Files can also be downloaded from the web UI directrly or streamed using your favourite player. .
 
 # Pre-requisites
 
