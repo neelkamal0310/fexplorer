@@ -74,7 +74,7 @@ def explorer(dirpath):
 @app.route('/download/<path:filepath>')
 def download(filepath):
     filename = unquote(filepath)
-    return send_from_directory(directory='/', path=filename)
+    return send_from_directory('/', filename)
 
 
 # Read file at the path and display it
