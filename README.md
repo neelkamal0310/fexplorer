@@ -21,11 +21,13 @@ It features an in-built text viewer and by default will open any file that can b
     ```bash
     git clone https://github.com/neelkamal0310/fexplorer.git
     cd fexplorer
+    
     python3 -m venv env
     source env/bin/activate
-    pip install -r requirements.txt
-    python app.py
     
+    python3 -m pip install -r requirements.txt
+    
+    python3 app.py
     ```
     
 # Notes
