@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class='dirs'>/{{ curr }}/</h1>
+    <a class='dirs' href="{{ url_for('explorer', dirpath=prev) }}"><b>..</b></a>
+    {% for dir in dirs %}
+        <a class='dirs' href="{{ url_for('explorer', dirpath=curr+'/'+dir) }}"><b>{{ dir }}</b></a>
+    {% endfor %}
+    {% for file in files %}
+        <a href="{{ url_for('explorer', dirpath=curr+'/'+file) }}">{{ file }}</a>
+    {% endfor %}
+{% endblock %}

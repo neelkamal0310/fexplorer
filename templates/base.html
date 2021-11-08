@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+        {% if title %}
+            {{ title }}
+        {% else %}
+            fexplorer
+        {% endif %}
+    </title>
+    <style>
+        html {
+            font-size: 1.1rem;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            letter-spacing: .1ch;
+            background-color: #1e1f29;
+            color: #f8f8f2;
+        }
+        body {
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 1em 1em 1em;
+        }
+        a, a:visited {
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            color: #f8f8f2;
+        }
+        a:hover {
+            background-color: #44475a;
+        }
+        .dirs, .dirs:visited {
+            color: #bd93f9;
+        }
+    </style>
+</head>
+<body>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
