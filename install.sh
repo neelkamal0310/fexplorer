@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 echo 'Copying files...'
-mkdir -p $HOME/.local/bin
-cp -r templates fexplorer.py $HOME/.local/bin/
+mkdir -p $HOME/.local/bin/fexplorer/
+cp -r templates fexplorer.py $HOME/.local/bin/fexplorer/
 mkdir -p $HOME/.config/systemd/user
 cp fexplorer.service $HOME/.config/systemd/user/
 
