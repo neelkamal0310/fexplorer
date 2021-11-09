@@ -1,0 +1,11 @@
+[Unit]
+Description=fexplorer service
+
+[Service]
+WorkingDirectory=%h/.local/bin/fexplorer
+Restart=on-failure
+RestartSec=2s
+ExecStart=/usr/bin/gunicorn --bind 0.0.0.0:5000 --workers 2 fexplorer:app
+
+[Install]
+WantedBy=default.target
